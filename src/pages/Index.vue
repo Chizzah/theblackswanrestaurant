@@ -1,11 +1,11 @@
 <template>
   <Layout>
     <section id="hero-section" class="relative text-gray-100 bg-gray-900" v-for="edge in $page.hero.edges" :key="edge.node.id">
-      <video class="bg-gray-900 opacity-50" muted autoplay loop :src="edge.node.heroVideo.file.url" />
+      <video class="w-full h-full bg-gray-900 opacity-50" muted autoplay loop :src="edge.node.heroVideo.file.url" />
       <section class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full">
         <h1 class="mx-8 font-bold text-center uppercase">{{ edge.node.heroTextHeading }}</h1>
         <h3 class="mx-4 my-4 text-sm font-semibold text-center">{{ edge.node.heroTextSubHeading }}</h3>
-        <g-link to="/reservetable"><button class="px-4 py-3 text-sm font-semibold text-gray-100 bg-red-700 rounded-lg focus:outline-none">Make A Reservation</button></g-link>
+        <g-link to="/reservetable"><button class="px-4 py-3 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Make A Reservation</button></g-link>
       </section>
     </section>
       <section id="overview-section" class="flex flex-col items-center text-gray-900 bg-gray-100 justify-items">
@@ -77,8 +77,8 @@
           <li class="flex flex-col items-center justify-center">
             <h3 class="mt-8 text-sm font-semibold">{{ edge.node.title }}</h3>
             <h4 class="mb-8 text-xs">by {{ edge.node.author.name }}</h4>
-            <g-image :src="edge.node.image.file.url" alt="" />
-            <g-link :to="edge.node.slug"><button class="px-5 py-3 my-8 font-semibold text-gray-100 bg-red-700 rounded-lg focus:outline-none">Read More</button></g-link>
+            <g-image class="md:rounded" :src="edge.node.image.file.url" alt="" />
+            <g-link :to="`/post/${edge.node.slug}`"><button class="px-5 py-3 my-8 font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Read More</button></g-link>
           </li>
         </ul>
       </section>
@@ -88,7 +88,7 @@
       <section id="contact-us" class="flex flex-col items-center justify-center py-8">
         <h2 class="my-4 uppercase">Need to get in touch?</h2>
         <h3 class="mb-8">Head on over to our Contact Page <br> to get all our details</h3>
-        <g-link to="/contact" ><button class="px-5 py-3 font-semibold text-gray-100 bg-red-700 rounded-lg focus:outline-none">Contact Us</button></g-link>
+        <g-link to="/contact" ><button class="px-5 py-3 font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Contact Us</button></g-link>
       </section>
       <section id="affiliated-section">
         <h2></h2>

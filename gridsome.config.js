@@ -6,6 +6,9 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  templates: {
+    ContentfulPost: '/post/:slug',
+  },
   plugins: [
     {
       use: '@gridsome/source-contentful',

@@ -36,7 +36,7 @@
     </footer>
         <div class="py-2 mx-4 text-xs text-center border-solid sm:order-2">
             <p class="mb-4">JAMstack Website by <span class="font-semibold hover:text-green-400">Chadd Web Design</span></p>
-            <p class="mb-2">Copyright &copy; {{ new Date().getFullYear() }} The Black Swan Restaurant & Wine <br> Bar. All rights reserved.</p>
+            <p class="mb-2">Copyright &copy; {{ new Date().getFullYear() }} The Black Swan Restaurant & Wine Bar. All rights reserved.</p>
         </div>
       </div>
 </template>

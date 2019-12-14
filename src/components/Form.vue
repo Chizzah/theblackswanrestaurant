@@ -26,7 +26,7 @@
         <div class="message-wrapper">
           <textarea class="w-full px-6 pt-4 pb-12 mb-2 overflow-hidden bg-gray-200 rounded-xl focus:outline-none focus:shadow-outline" for="message" name="message" required v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="Do you have any special requests?"></textarea>
         </div>
-        <button class="w-full py-4 font-semibold text-gray-100 bg-red-700 rounded-xl md:text-sm focus:outline-none" type="submit">Make Reservation</button>
+        <button class="w-full py-4 font-semibold text-gray-100 bg-red-700 rounded-xl md:text-sm focus:outline-none" type="submit">Reserve Table</button>
       </form>
     </section>
   </section>

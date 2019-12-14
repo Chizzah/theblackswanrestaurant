@@ -7,10 +7,10 @@
       <div class="hidden md:flex md:text-md md:items-center">
         <ul class="mr-4" v-for="menuItem in menuItems" :key="menuItem.title">
           <li class="md:px-2">
-            <g-link class="hover:text-green-400" :to="`${menuItem.route}`">{{ menuItem.title }}</g-link>
+            <g-link class="hover:text-green-400" :to="menuItem.route">{{ menuItem.title }}</g-link>
           </li>
         </ul>
-        <g-link to="/estimateproject"><button class="px-5 py-2 mr-4 text-xs font-semibold text-gray-100 bg-green-400 rounded-full hover:bg-gray-200 hover:text-gray-900 focus:outline-none md:text-md">Let's talk</button></g-link>
+        <g-link to="/reservetable"><button class="px-4 py-3 mr-4 text-xs font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none md:text-md">Make A Reservation</button></g-link>
       </div>
       <div class="px-4 py-2 md:hidden">
         <button @click="isOpen = !isOpen" type="button" class="block focus:outline-none">
@@ -22,10 +22,9 @@
       <div class="mb-2 ml-8">
         <ul class="rounded list-reset md:hidden" v-for="menuItem in menuItems" :key="menuItem.title">
           <li class="py-1">
-            <g-link class="hover:text-green-400" :to="`${menuItem.route}`">{{ menuItem.title }}</g-link>
+            <g-link class="hover:text-red-700" :to="menuItem.route">{{ menuItem.title }}</g-link>
           </li>
         </ul>
-        <g-link class="hover:text-green-400" to="/contact">Contact</g-link>
       </div>
     </nav>
   </header>
@@ -38,9 +37,10 @@ export default {
       menuItems: [
         { title:'Home', route:'/' },
         { title:'About', route:'/about' },
-        { title:'Portfolio', route:'/portfolio' },
-        { title:'Tech', route:'/tech' },
-        { title:'Blog', route:'/blog' }
+        { title:'Menu', route:'/menu' },
+        { title:'Gallery', route:'/gallery' },
+        { title:'Blog', route:'/blog' },
+        { title:'Contact', route:'/Contact' }
       ],
       isOpen: false,
     }
