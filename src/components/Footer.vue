@@ -1,6 +1,6 @@
 <template>
-  <footer class="text-gray-500 bg-black md:rounded-xl md:text-center md:mb-16">
-    <section class="border-b border-gray-600 border-solid md:ml-24">
+  <footer class="text-gray-500 bg-black md:rounded-xl md:text-center md:mb-16 md:max-w-6xl md:mx-auto">
+    <section class="mt-8 border-b border-gray-600 border-solid md:ml-24 md:mt-16">
       <h4 class="pt-16 mx-8 mb-4 text-xs font-semibold text-red-700 uppercase">Fine dining at its best</h4>
       <h1 class="mx-8 mb-6 text-gray-100 text-md">Join us at the best fine dining restaurant in Oudtshoorn & the Klein Karoo.</h1>
       <h3 class="mx-8 mr-6 text-sm">Experience an evening you'll never forget at the Black Swan Restaurant & Wine Bar. Bring a loved one or a few friends and let us be a part of your wonderful memories.</h3>

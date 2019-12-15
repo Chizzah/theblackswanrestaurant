@@ -1,16 +1,16 @@
 <template>
-  <header class="text-gray-900 md:text-xl md:py-8">
-    <nav class="flex items-center justify-between w-full py-2 bg-gray-100 md:max-w-6xl">
+  <header class="text-gray-100 md:text-xl">
+    <nav class="absolute top-0 left-0 z-50 flex items-center justify-between w-full py-2 bg-transparent">
       <div class="flex flex-col items-center justify-between py-2">
-        <g-link to="/"><h1 class="mx-8 uppercase md:text-2xl">The black swan</h1></g-link>
+        <g-link to="/"><h1 class="mx-8 uppercase md:text-3xl">The black swan</h1></g-link>
       </div>
-      <div class="hidden md:flex md:text-md md:items-center">
+      <div class="hidden md:uppercase md:font-semibold md:flex md:text-md md:items-center">
         <ul class="mr-4" v-for="menuItem in menuItems" :key="menuItem.title">
           <li class="md:px-2">
-            <g-link class="hover:text-red-700" :to="menuItem.route">{{ menuItem.title }}</g-link>
+            <g-link class="hover:text-red-700" :to="menuItem.route"><h2>{{ menuItem.title }}</h2></g-link>
           </li>
         </ul>
-        <g-link to="/reservetable"><button class="px-4 py-3 mr-4 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Make A Reservation</button></g-link>
+        <g-link to="/reservetable"><button class="px-4 py-3 mr-4 mr-8 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Make A Reservation</button></g-link>
       </div>
       <div class="px-4 py-2 md:hidden">
         <button @click="isOpen = !isOpen" type="button" class="block focus:outline-none">
@@ -38,6 +38,7 @@ export default {
         { title:'Home', route:'/' },
         { title:'About', route:'/about' },
         { title:'Menu', route:'/menu' },
+        { title:'Events', route:'/events' },
         { title:'Gallery', route:'/gallery' },
         { title:'Blog', route:'/blog' },
         { title:'Contact', route:'/Contact' }
