@@ -53,8 +53,9 @@ export default {
         { title:'Cookies', route:'/cookies' }
       ],
       menuItems: [
-        { title:'Starters', route:'/starters' },
+        { title:'Appetisers', route:'/appetisers' },
         { title:'Mains', route:'/mains' },
+        { title:'Specialities', route:'/specialities' },
         { title:'Desserts', route:'/desserts' },
         { title:'Wine List', route:'/winelist' },
       ],

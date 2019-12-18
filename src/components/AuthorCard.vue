@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <div class="flex items-center justify-center mt-8">
+  <section class="md:w-1/4">
+    <div class="flex items-center justify-center mt-20 md:mt-10 md:ml-8">
       <div class="border-b-2 border-red-700 border-solid w-92"></div>
     </div>
     <section class="m-8">

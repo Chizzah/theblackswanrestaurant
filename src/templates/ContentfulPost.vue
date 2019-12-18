@@ -1,12 +1,16 @@
 <template>
   <layout>
-    <AuthorCard />
-    <section class="m-8">
-      <h2 class="mb-4">{{ $page.post.date }}</h2>
-      <h1 class="mb-8 text-3xl md:text-6xl">{{ $page.post.title }}</h1>
-      <p class="mb-8"><span class="font-extrabold text-red-700 uppercase">Quick Summary:</span> {{ $page.post.summary }}</p>
-      <g-image :src="$page.post.image.file.url"/>
-      <div class="mx-6 my-8" v-html="$page.post.body" />
+    <section class="mt-20 md:mt-40 md:flex md:justify-start md:items-start">
+      <AuthorCard />
+      <section class="m-8">
+        <h2 class="mb-4 md:text-lg">{{ $page.post.date }}</h2>
+        <h1 class="mb-8 text-3xl md:text-6xl">{{ $page.post.title }}</h1>
+        <p class="mb-8 md:mr-20 md:text-2xl"><span class="font-extrabold text-red-700 uppercase">Quick Summary:</span> {{ $page.post.summary }}</p>
+        <section class="flex items-center justify-center md:mr-20 md:my-20">
+          <g-image :src="$page.post.image.file.url"/>
+        </section>
+        <div class="mx-6 my-8 md:mr-20 md:text-2xl" v-html="$page.post.body" />
+      </section>
     </section>
   </layout>
 </template>

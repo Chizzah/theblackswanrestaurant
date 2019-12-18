@@ -59,8 +59,8 @@
         </section>
       </section>
       <section id="latest-articles" class="flex flex-col items-center text-gray-900 bg-gray-200 justify-items">
-        <h2 class="mt-8 text-xl font-bold text-yellow-700 uppercase md:text-2xl">Latest Articles</h2>
-        <h3 class="mx-16 font-semibold text-center md:text-2xl">Read our latest blog post about The Black Swan</h3>
+        <h2 class="mt-8 text-xl font-bold text-yellow-700 uppercase md:text-2xl md:mt-20">Latest Articles</h2>
+        <h3 class="mx-16 font-semibold text-center md:text-2xl md:mb-20">Read our latest blog post about The Black Swan</h3>
         <section class="md:flex md:justify-center md:items-center">
           <ul class="md:flex md:justify-center md:items-center" v-for="edge in $page.post.edges" :key="edge.node.id">
             <li class="flex flex-col items-center justify-center md:flex-wrap md:mx-40">

@@ -9,58 +9,7 @@
         </section>
       </section>
       <section class="mb-20">
-        <section>
-          <h2 class="mt-16 mb-12 text-xl font-bold text-center text-yellow-700 uppercase md:text-2xl">Appetisers</h2>
-          <section v-for="edge in $page.appetisers.edges" :key="edge.node.id">
-            <section class="flex items-center justify-between">
-              <h3 class="my-4 ml-4 font-semibold">{{ edge.node.name }}</h3>
-              <h4 class="mr-4 font-extrabold text-yellow-700">{{ edge.node.price }}</h4>
-            </section>
-            <section class="flex items-center justify-center">
-              <g-image src="../../static/img/black-swan-restaurant-in-lovely-oudtshoorn.webp" alt="" width="50" />
-              <h5 class="ml-4 w-88">{{ edge.node.description }}</h5>
-            </section>
-          </section>
-        </section>
-        <section>
-          <h2 class="mt-16 mb-12 text-xl font-bold text-center text-yellow-700 uppercase md:text-2xl">Mains</h2>
-          <section v-for="edge in $page.mains.edges" :key="edge.node.id">
-            <section class="flex items-center justify-between">
-              <h3 class="my-4 ml-4 font-semibold">{{ edge.node.name }}</h3>
-              <h4 class="mr-4 font-extrabold text-yellow-700">{{ edge.node.price }}</h4>
-            </section>
-            <section class="flex items-center justify-center">
-              <g-image src="../../static/img/black-swan-restaurant-in-lovely-oudtshoorn.webp" alt="" width="50" />
-              <h5 class="ml-4 w-88">{{ edge.node.description }}</h5>
-            </section>
-          </section>
-        </section>
-        <section>
-          <h2 class="mt-16 mb-12 text-xl font-bold text-center text-yellow-700 uppercase md:text-2xl">Specialities</h2>
-          <section v-for="edge in $page.specialities.edges" :key="edge.node.id">
-            <section class="flex items-center justify-between">
-              <h3 class="my-4 ml-4 font-semibold">{{ edge.node.name }}</h3>
-              <h4 class="mr-4 font-extrabold text-yellow-700">SQ</h4>
-            </section>
-            <section class="flex items-center justify-center">
-              <g-image src="../../static/img/black-swan-restaurant-in-lovely-oudtshoorn.webp" alt="" width="50" />
-              <h5 class="ml-4 w-88">{{ edge.node.description }}</h5>
-            </section>
-          </section>
-        </section>
-        <section>
-          <h2 class="mt-16 mb-12 text-xl font-bold text-center text-yellow-700 uppercase md:text-2xl">Desserts</h2>
-          <section v-for="edge in $page.desserts.edges" :key="edge.node.id">
-            <section class="flex items-center justify-between">
-              <h3 class="my-4 ml-4 font-semibold">{{ edge.node.name }}</h3>
-              <h4 class="mr-4 font-extrabold text-yellow-700">{{ edge.node.price }}</h4>
-            </section>
-            <section class="flex items-center justify-center">
-              <g-image src="../../static/img/black-swan-restaurant-in-lovely-oudtshoorn.webp" alt="" width="50" />
-              <h5 class="ml-4 w-88">{{ edge.node.description }}</h5>
-            </section>
-          </section>
-        </section>
+        <Tabs />
       </section>
     </section>
   </layout>
@@ -110,3 +59,13 @@
     }
   }
 </page-query>
+
+<script>
+import Tabs from '~/components/Tabs';
+
+export default {
+  components: {
+    Tabs
+  }
+}
+</script>
