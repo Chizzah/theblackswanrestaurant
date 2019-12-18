@@ -2,13 +2,13 @@
   <Layout>
     <section class="text-gray-900 bg-gray-100 md:text-2xl">
       <section id="hero-section" class="relative text-gray-100 bg-gray-900 md:h-screen" v-for="edge in $page.hero.edges" :key="edge.node.id">
-        <video class="w-full h-full bg-gray-900 opacity-25 md:object-cover" muted autoplay loop :src="edge.node.heroVideo.file.url" />
+        <video class="w-full h-full bg-gray-900 opacity-50 md:opacity-25 md:object-cover" muted autoplay loop :src="edge.node.heroVideo.file.url" />
         <section class="absolute top-0 left-0 flex flex-col items-center justify-start w-full h-full mt-24 md:justify-start md:mt-56">
           <h1 class="mx-12 font-semibold text-center uppercase md:text-4xl md:mx-128 md:mb-20">{{ edge.node.heroTextHeading }}</h1>
           <h3 class="hidden mx-4 my-4 font-semibold text-center md:block md:text-2xl md:mx-110 md:mb-20">{{ edge.node.heroTextSubHeading }}</h3>
           <g-link to="/reservetable"><button class="hidden px-4 py-3 mb-2 text-sm font-semibold text-gray-100 bg-red-700 shadow-md md:block rounded-xl focus:outline-none md:text-2xl">Make A Reservation</button></g-link>
         </section>
-        <section class="flex flex-col items-center justify-center h-56 text-gray-900 bg-gray-200 sm:hidden">
+        <section class="flex flex-col items-center justify-center h-56 text-gray-900 bg-gray-100 sm:hidden">
           <h3 class="mx-4 my-4 font-semibold text-center md:block md:text-2xl md:mx-96 md:mb-20">{{ edge.node.heroTextSubHeading }}</h3>
           <g-link to="/reservetable"><button class="px-4 py-3 mb-2 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none md:text-2xl">Make A Reservation</button></g-link>
         </section>
@@ -60,13 +60,13 @@
       </section>
       <section id="latest-articles" class="flex flex-col items-center text-gray-900 bg-gray-200 justify-items">
         <h2 class="mt-8 text-xl font-bold text-yellow-700 uppercase md:text-2xl">Latest Articles</h2>
-        <h3 class="font-semibold text-center md:text-2xl">Read our latest blog post about The Black Swan</h3>
-        <section class="md:flex">
-          <ul v-for="edge in $page.post.edges" :key="edge.node.id">
-            <li class="flex flex-col items-center justify-center md:max-w-md md:mx-auto md:flex-wrap md:ml-12">
+        <h3 class="mx-16 font-semibold text-center md:text-2xl">Read our latest blog post about The Black Swan</h3>
+        <section class="md:flex md:justify-center md:items-center">
+          <ul class="md:flex md:justify-center md:items-center" v-for="edge in $page.post.edges" :key="edge.node.id">
+            <li class="flex flex-col items-center justify-center md:flex-wrap md:mx-40">
               <h3 class="mt-8 font-semibold">{{ edge.node.title }}</h3>
               <h4 class="mb-8 text-sm">by {{ edge.node.author.name }}</h4>
-              <g-image width="400" class="md:m-12 md:rounded" :src="edge.node.image.file.url" alt="" />
+              <g-image width="400" class="md:rounded" :src="edge.node.image.file.url" alt="" />
               <g-link :to="`/post/${edge.node.slug}`"><button class="px-5 py-3 my-8 font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Read More</button></g-link>
             </li>
           </ul>
@@ -81,8 +81,8 @@
         <h2></h2>
       </section>
       <section id="contact-us" class="flex flex-col items-center justify-center py-8 text-center bg-gray-100">
-        <h2 class="mx-8 my-4 text-xl font-bold text-yellow-700 uppercase">Need to get in touch?</h2>
-        <h3 class="mx-4 mb-8">Head on over to our Contact Page to get all our details</h3>
+        <h2 class="mx-8 my-4 text-xl font-bold text-yellow-700 uppercase md:text-2xl">Need to get in touch?</h2>
+        <h3 class="mx-4 mb-8 md:text-2xl">Head on over to our Contact Page to get all our details</h3>
         <g-link to="/contact" ><button class="px-5 py-3 font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Contact Us</button></g-link>
       </section>
       <section id="affiliated-section">

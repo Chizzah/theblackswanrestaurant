@@ -1,7 +1,7 @@
 <template>
   <section>
-    <section>
-      <form class=""
+    <section class="md:flex md:flex-col md:justify-center md:items-center">
+      <form class="md:w-128"
         name="contact"
         method="post"
         v-on:submit.prevent="handleSubmit"
