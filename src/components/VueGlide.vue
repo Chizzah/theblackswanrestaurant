@@ -1,10 +1,11 @@
 <template>
   <section>
-    <vue-glide
+    <vue-glide class="max-w-6xl mx-auto"
       :perView="1"
-      :autoplay="6000">
+      :autoplay="6000"
+      :gap="0">
       <vue-glide-slide v-for="(item, i) in items" :key="i">
-        <g-image class="md:mx-auto md:h-138" :src="item.images" />
+        <g-image class="md:ml-32 md:h-142 md:rounded" :src="item.images" />
       </vue-glide-slide>
     </vue-glide>
   </section>

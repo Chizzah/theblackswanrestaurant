@@ -1,21 +1,19 @@
 <template>
-  <Layout>
-    <section class="max-w-lg mx-auto mt-20 md:mt-40 md:max-w-6xl">
-      <h2 class="text-xl font-bold text-center text-yellow-700 md:text-3xl md:mx-32 md:mb-20">Amazing food & unforgettable memories at The Black Swan Restaurant & Wine Bar in Oudtshoorn, Klein Karoo</h2>
-      <Carousel />
+  <layout>
+    <section class="py-8 mt-20 h-96 md:h-96 md:mt-32 md:pb-40 md:h-256">
+      <h1 class="mb-8 font-semibold text-center text-yellow-700 uppercase md:text-4xl md:mb-20">Unforgettable memories at <br> The Black Swan Restaurant & Wine Bar <br> in Oudtshoorn, Klein Karoo</h1>
+      <VueGlide />
+      <p class="my-8 font-semibold text-center uppercase">Swipe</p>
     </section>
-  </Layout>
+  </layout>
 </template>
 
 <script>
-import Carousel from '~/components/Carousel';
+import VueGlide from '~/components/VueGlide.vue';
 
 export default {
-  metaInfo: {
-    title: "Gallery"
-  },
   components: {
-    Carousel
-  },
+    VueGlide
+  }
 }
 </script>
