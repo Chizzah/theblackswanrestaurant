@@ -6,10 +6,6 @@
       <vue-glide-slide v-for="(item, i) in items" :key="i">
         <g-image class="md:mx-auto md:h-138" :src="item.images" />
       </vue-glide-slide>
-      <template slot="control">
-        <button class="px-12 py-3 mt-4 ml-5 font-semibold text-gray-100 uppercase bg-yellow-700 rounded md:text-2xl md:mt-20 md:ml-44" data-glide-dir="<">prev</button>
-        <button class="px-12 py-3 mt-4 ml-5 font-semibold text-gray-100 uppercase bg-yellow-700 md:text-2xl md:mt-20 md:ml-110 rounded-xl" data-glide-dir=">">next</button>
-      </template>
     </vue-glide>
   </section>
 </template>
@@ -18,6 +14,10 @@
 import { Glide, GlideSlide } from 'vue-glide-js';
 
 export default {
+  components: {
+    [Glide.name]: Glide,
+    [GlideSlide.name]: GlideSlide
+  },
   data(items) {
     return {
       items: [
@@ -29,10 +29,6 @@ export default {
         { images: require('../../static/img/the-black-swan-shuttle-services.webp') }
       ],
     }
-  },
-  components: {
-    [Glide.name]: Glide,
-    [GlideSlide.name]: GlideSlide
   }
 }
 </script>
