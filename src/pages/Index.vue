@@ -8,9 +8,9 @@
           <h3 class="hidden mx-4 my-4 font-semibold text-center md:block md:text-2xl md:mx-110 md:mb-20">{{ edge.node.heroTextSubHeading }}</h3>
           <g-link to="/reservetable"><button class="hidden px-4 py-3 mb-2 text-sm font-semibold text-gray-100 bg-red-700 shadow-md md:block rounded-xl focus:outline-none md:text-2xl">Make A Reservation</button></g-link>
         </section>
-        <section class="flex flex-col items-center justify-center h-56 text-gray-900 bg-gray-100 sm:hidden">
+        <section class="flex flex-col items-center justify-around h-56 text-gray-900 bg-gray-100 sm:hidden">
           <h3 class="mx-4 my-4 font-semibold text-center md:block md:text-2xl md:mx-96 md:mb-20">{{ edge.node.heroTextSubHeading }}</h3>
-          <g-link to="/reservetable"><button class="px-4 py-3 mb-2 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none md:text-2xl">Make A Reservation</button></g-link>
+          <g-link to="/reservetable"><button class="z-50 px-4 py-3 mb-2 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none md:text-2xl">Make A Reservation</button></g-link>
         </section>
       </section> 
       <section id="overview-section" class="flex flex-col items-center text-gray-900 bg-gray-200 justify-items md:h-screen">

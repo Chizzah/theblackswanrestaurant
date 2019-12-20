@@ -8,7 +8,7 @@
           <h3 class="mx-4 mx-10 my-8 text-center md:text-2xl">We'd love to be a part of your journey</h3>
         </section>
       </section>
-      <section class="mb-20">
+      <section class="mt-6 mb-20 md:mt-12">
         <Tabs />
       </section>
     </section>

@@ -1,6 +1,14 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
+//Vue-Glide-JS
+import Vue from 'vue'
+import App from './App.vue'
+import VueGlide from 'vue-glide-js'
+import 'vue-glide-js/dist/vue-glide.css'
+
+Vue.use(VueGlide)
+
 // Load Amaranth typeface
 require('typeface-amaranth')
 

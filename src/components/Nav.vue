@@ -7,7 +7,7 @@
       <div class="hidden md:uppercase md:font-semibold md:flex md:text-md md:items-center">
         <ul class="mr-4" v-for="menuItem in menuItems" :key="menuItem.title">
           <li class="md:px-2">
-            <g-link class="hover:text-yellow-600" :to="menuItem.route"><h2>{{ menuItem.title }}</h2></g-link>
+            <g-link class="hover:text-yellow-600" :to="menuItem.route">{{ menuItem.title }}</g-link>
           </li>
         </ul>
         <g-link to="/reservetable"><button class="px-4 py-3 mr-4 mr-8 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Make A Reservation</button></g-link>
@@ -38,6 +38,7 @@ export default {
         { title:'Home', route:'/' },
         { title:'About', route:'/about' },
         { title:'Menu', route:'/menu' },
+        { title:'Gallery', route:'/gallery' },
         { title:'Contact', route:'/Contact' }
       ],
       isOpen: false,
