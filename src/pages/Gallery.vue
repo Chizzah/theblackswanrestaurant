@@ -1,9 +1,9 @@
 <template>
   <layout>
-    <section class="py-8 mt-20 h-96 md:h-96 md:mt-32 md:pb-40 md:h-256">
-      <h1 class="mb-8 font-semibold text-center text-yellow-700 uppercase md:text-4xl md:mb-20">Unforgettable memories at <br> The Black Swan Restaurant & Wine Bar <br> in Oudtshoorn, Klein Karoo</h1>
-      <VueGlide />
-      <p class="my-8 font-semibold text-center uppercase">Swipe</p>
+    <section class="mt-24 md:mt-48">
+      <h1 class="font-bold text-center text-yellow-700 uppercase md:text-4xl my-8 mx-2 md:my-24 md:mx-64">Unforgettable memories at The Black Swan Restaurant in Oudtshoorn, Klein Karoo</h1>
+      <VueGlide class="mt-12 mb-4" />
+      <p class="text-yellow-700 font-bold text-center uppercase md:text-2xl md:mb-24">Swipe</p>
     </section>
   </layout>
 </template>

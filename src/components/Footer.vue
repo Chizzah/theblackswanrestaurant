@@ -49,8 +49,7 @@ export default {
         { title:'Events', route:'/events' },
         { title:'Gallery', route:'/gallery' },
         { title:'Blog', route:'/blog' },
-        { title:'Privacy', route:'/privacy' },
-        { title:'Cookies', route:'/cookies' }
+        { title:'Privacy', route:'/privacypolicy' },
       ],
       menuItems: [
         { title:'Appetisers', route:'/appetisers' },

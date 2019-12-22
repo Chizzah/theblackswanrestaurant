@@ -39,6 +39,7 @@ export default {
         { title:'About', route:'/about' },
         { title:'Menu', route:'/menu' },
         { title:'Gallery', route:'/gallery' },
+        { title:'Blog', route:'/blog' },
         { title:'Contact', route:'/Contact' }
       ],
       isOpen: false,

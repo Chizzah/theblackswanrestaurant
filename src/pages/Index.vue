@@ -3,14 +3,14 @@
     <section class="text-gray-900 bg-gray-100 md:text-2xl">
       <section id="hero-section" class="relative text-gray-100 bg-gray-900 md:h-screen" v-for="edge in $page.hero.edges" :key="edge.node.id">
         <video class="w-full h-full bg-gray-900 opacity-50 md:opacity-25 md:object-cover" muted autoplay loop :src="edge.node.heroVideo.file.url" />
-        <section class="absolute top-0 left-0 flex flex-col items-center justify-start w-full h-full mt-24 md:justify-start md:mt-56">
+        <section class="absolute top-0 left-0 flex flex-col items-center justify-start w-full md:h-full mt-24 md:justify-start md:mt-56">
           <h1 class="mx-12 font-semibold text-center uppercase md:text-4xl md:mx-128 md:mb-20">{{ edge.node.heroTextHeading }}</h1>
           <h3 class="hidden mx-4 my-4 font-semibold text-center md:block md:text-2xl md:mx-110 md:mb-20">{{ edge.node.heroTextSubHeading }}</h3>
           <g-link to="/reservetable"><button class="hidden px-4 py-3 mb-2 text-sm font-semibold text-gray-100 bg-red-700 shadow-md md:block rounded-xl focus:outline-none md:text-2xl">Make A Reservation</button></g-link>
         </section>
         <section class="flex flex-col items-center justify-around h-56 text-gray-900 bg-gray-100 sm:hidden">
           <h3 class="mx-4 my-4 font-semibold text-center md:block md:text-2xl md:mx-96 md:mb-20">{{ edge.node.heroTextSubHeading }}</h3>
-          <g-link to="/reservetable"><button class="z-50 px-4 py-3 mb-2 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none md:text-2xl">Make A Reservation</button></g-link>
+          <g-link to="/reservetable"><button class="px-4 py-3 mb-2 text-sm font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none md:text-2xl">Make A Reservation</button></g-link>
         </section>
       </section> 
       <section id="overview-section" class="flex flex-col items-center text-gray-900 bg-gray-200 justify-items md:h-screen">
