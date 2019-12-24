@@ -6,7 +6,7 @@
       <p class="mb-4 text-center">{{ $page.events.description }}</p>
       <p class="mb-4 text-center"><strong>Date:</strong> {{ $page.events.date }}</p>
       <p class="mb-4 text-center"><strong>Time:</strong> {{ $page.events.time }}</p>
-      <p class="mb-4 text-center"><strong>Admission:</strong> {{ $page.events.admission }}</p>      
+      <p class="mb-4 text-center"><strong>Admission:</strong> R{{ $page.events.admission }}</p>      
     </section>
   </layout>
 </template>
