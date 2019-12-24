@@ -38,8 +38,9 @@ export default {
         { title:'Home', route:'/' },
         { title:'About', route:'/about' },
         { title:'Menu', route:'/menu' },
-        { title:'Gallery', route:'/gallery' },
+        { title:'Events', route:'/events' },
         { title:'Blog', route:'/blog' },
+        { title:'Gallery', route:'/gallery' },
         { title:'Contact', route:'/Contact' }
       ],
       isOpen: false,

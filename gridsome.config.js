@@ -8,7 +8,7 @@ module.exports = {
   siteName: 'Gridsome',
   templates: {
     ContentfulPost: '/post/:slug',
-    ContentfulAppetisers: '/appetisers/:slug',
+    ContentfulEvents: '/event/:slug'
   },
   plugins: [
     {

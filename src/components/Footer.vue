@@ -47,8 +47,8 @@ export default {
         { title:'Home', route:'/' },
         { title:'About', route:'/about' },
         { title:'Events', route:'/events' },
-        { title:'Gallery', route:'/gallery' },
         { title:'Blog', route:'/blog' },
+        { title:'Gallery', route:'/gallery' },
         { title:'Privacy', route:'/privacypolicy' },
       ],
       menuItems: [

@@ -72,7 +72,14 @@
           </ul>
         </section>
       </section>
-      <section id="upcoming-events">
+      <section id="upcoming-events" class="flex flex-col items-center text-gray-900 justify-items mb-8">
+        <h2 class="mt-8 text-xl font-bold text-yellow-700 uppercase md:text-2xl md:mt-20">Upcoming Events</h2>
+        <h3 class="mx-8 font-semibold text-center md:text-2xl md:mb-20">Find the latest events happening at the Black Swan Restaurant in Oudtshoorn</h3>
+        <section class="flex flex-col justify-center items-center" v-for="edge in $page.events.edges" :key="edge.node.id">
+          <g-image class="my-8 md:rounded" :src="edge.node.eventImage.file.url" />
+          <h4 class="mb-4 mx-4 text-center"><strong>{{ edge.node.title }}</strong></h4>
+          <g-link :to="`/event/${edge.node.slug}`"><button class="px-5 py-3 font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Find Out More</button></g-link>
+        </section>
       </section>
       <section id="featured-menu">
         <h2></h2>
@@ -80,7 +87,7 @@
       <section id="testimonials-section">
         <h2></h2>
       </section>
-      <section id="contact-us" class="flex flex-col items-center justify-center py-8 text-center bg-gray-100">
+      <section id="contact-us" class="flex flex-col items-center justify-center py-8 text-center bg-gray-200 text-gray-900">
         <h2 class="mx-8 my-4 text-xl font-bold text-yellow-700 uppercase md:text-2xl">Need to get in touch?</h2>
         <h3 class="mx-4 mb-8 md:text-2xl">Head on over to our Contact Page to get all our details</h3>
         <g-link to="/contact" ><button class="px-5 py-3 font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Contact Us</button></g-link>
@@ -97,40 +104,54 @@
 </template>
 
 <page-query>
-query Post {
-  post: allContentfulPost {
-    edges {
-      node {
-        title
-        slug
-        author {
-          name
-          facebook
-        }
-        image {
-          file {
-            url
+  query Post {
+    post: allContentfulPost {
+      edges {
+        node {
+          title
+          slug
+          author {
+            name
+            facebook
+          }
+          image {
+            file {
+              url
+            }
           }
         }
       }
     }
-  }
-  hero: allContentfulHeroSection {
-    edges {
-      node {
-        id
-        title
-        heroVideo {
-          file {
-            url
+    hero: allContentfulHeroSection {
+      edges {
+        node {
+          id
+          title
+          heroVideo {
+            file {
+              url
+            }
           }
+          heroTextHeading
+          heroTextSubHeading
         }
-        heroTextHeading
-        heroTextSubHeading
+      }
+    }
+    events: allContentfulEvents {
+      edges {
+        node {
+          id
+          eventImage {
+            file {
+              url
+            }
+          }
+          title
+          slug
+        }
       }
     }
   }
-}
 </page-query>
 
 <script>
