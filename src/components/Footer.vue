@@ -25,7 +25,7 @@
       </section>
     </section>
     <section class="py-2 mx-4 text-xs text-center border-solid md:order-2">
-      <p class="mb-4 md:ml-16">JAMstack Website by <a href="http://chaddwebdesign.co.za" target="_blank"><span class="font-semibold hover:text-green-400">Chadd Web Design</span></a></p>
+      <p class="mb-4 md:ml-16">JAMstack Website by <a href="http://chaddwebdesign.co.za" target="_blank" rel="noopener noreferrer"><span class="font-semibold hover:text-green-400">Chadd Web Design</span></a></p>
       <p class="mb-2 md:ml-8 md:mb-8">Copyright &copy; {{ new Date().getFullYear() }} The Black Swan Restaurant & Wine Bar. All rights reserved.</p>
     </section>
   </footer>
