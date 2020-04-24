@@ -157,13 +157,13 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Fine Dining Restaurant in Oudtshoorn | The Black Swan'
+    title: 'Fine Dining Restaurant in Oudtshoorn'
   },
   meta: [
     {
       name: 'description',
-      content: 'Located in the heart of Oudtshoorn, this hotspot is a popular restaurant with locals and visitors alike, and is abuzz with activity throughout the year.'
-    }
+      content: 'Located in the heart of Oudtshoorn, this hotspot is a popular restaurant with locals and visitors alike, and is abuzz with activity throughout the year.',
+    },
   ]
 }
 </script>
