@@ -32,13 +32,13 @@
           <section class="flex flex-col items-center justify-center md:w-1/2">
             <h3 class="font-semibold">Wine Bar</h3>
             <div class="w-32 pb-4 border-b border-red-700 border-solid"></div>
-            <g-image class="mt-8 md:rounded" width="350" height="200" src="../../static/img/the-black-swan-premium-wine.webp" alt="" />
+            <g-image class="mt-8 md:rounded" width="350" height="200" src="../../static/img/the-black-swan-premium-wine.webp" alt="Luxury wines at Black Swan restaurant in Oudtshoorn" />
             <p class="m-8 md:w-1/2">Our wine bar is the perfect spot to relax and enjoy an evening out with a loved one or friends. Enjoy the beautiful Klein Karoo while sipping on whites and reds from all around the country, our wine bar lets you unwind in style.</p>
           </section>
           <section class="flex flex-col items-center justify-center md:w-1/2">
             <h3 class="font-semibold">Our Menu</h3>
             <div class="w-32 pb-4 border-b border-red-700 border-solid"></div>
-            <g-image class="mt-8 md:rounded" width="350" height="200" src="../../static/img/the-black-swan-beef-cuisine.webp" alt="" />
+            <g-image class="mt-8 md:rounded" width="350" height="200" src="../../static/img/the-black-swan-beef-cuisine.webp" alt="Amazing food at the best restaurant in Oudtshoorn" />
             <p class="m-8 md:w-1/2">As the primo fine dining restaurant in Oudtshoorn we wow your tastebuds with mouthwatering dishes and decadent desserts. Come enjoy a traditional ostrich steak and find out why we were voted in the Top 20 Klein Karoo Smulpaap awards.</p>
           </section>
         </section>
@@ -46,13 +46,13 @@
             <section class="flex flex-col items-center justify-center md:w-1/2">
               <h3 class="font-semibold">Shuttle Service</h3>
               <div class="w-32 pb-4 border-b border-red-700 border-solid"></div>
-              <g-image class="mt-8 md:rounded" width="350" height="200" src="../../static/img/the-black-swan-shuttle-services.webp" alt="" />
+              <g-image class="mt-8 md:rounded" width="350" height="200" src="../../static/img/the-black-swan-shuttle-services.webp" alt="Reliable transport service for our patrons" />
               <p class="m-8 md:w-1/2">Our shuttle service is free and will take you to and from the restaurant. The result? You can enjoy a glass of wine without worrying about finding your way home afterwards.</p>
             </section>
             <section class="flex flex-col items-center justify-center md:w-1/2">
               <h3 class="mt-10 font-semibold">Mintt Street Café</h3>
               <div class="w-32 pb-4 border-b border-red-700 border-solid"></div>
-              <g-image class="mt-8 md:rounded" width="350" height="200" src="../../static/img/the-black-swan-mintt-cafe.webp" alt="" />
+              <g-image class="mt-8 md:rounded" width="350" height="200" src="../../static/img/the-black-swan-mintt-cafe.webp" alt="Mint Cafe for our day time patrons of Black Swan restaurant" />
               <p class="m-8 md:w-1/2">Join us at our daytime coffee shop, the Mintt Street Café, for an all-day breakfast and light lunch. Snack on a delicious camembert and fig sandwich, or treat yourself to a traditional ostrich burger alongside freshly hand-cut potato wedges.</p>
             </section>
           </section>
@@ -66,7 +66,7 @@
             <li class="flex flex-col items-center justify-center md:flex-wrap md:mx-40">
               <h3 class="mt-8 font-semibold">{{ edge.node.title }}</h3>
               <h4 class="mb-8 text-sm">by {{ edge.node.author.name }}</h4>
-              <g-image width="400" class="md:rounded" :src="edge.node.image.file.url" alt="" />
+              <g-image width="400" class="md:rounded" :src="edge.node.image.file.url" :alt="edge.node.title" />
               <g-link :to="`/post/${edge.node.slug}`"><button class="px-5 py-3 my-8 font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Read More</button></g-link>
             </li>
           </ul>
@@ -76,7 +76,7 @@
         <h2 class="mt-8 text-xl font-bold text-yellow-700 uppercase md:text-2xl md:mt-20">Upcoming Events</h2>
         <h3 class="mx-8 font-semibold text-center md:text-2xl md:mb-20">Find the latest events happening at the Black Swan Restaurant in Oudtshoorn</h3>
         <section class="flex flex-col justify-center items-center" v-for="edge in $page.events.edges" :key="edge.node.id">
-          <g-image class="my-8 md:rounded" :src="edge.node.eventImage.file.url" />
+          <g-image class="my-8 md:rounded" :src="edge.node.eventImage.file.url" :alt="edge.node.title" />
           <h4 class="mb-4 mx-4 text-center"><strong>{{ edge.node.title }}</strong></h4>
           <g-link :to="`/event/${edge.node.slug}`"><button class="px-5 py-3 font-semibold text-gray-100 bg-red-700 shadow-md rounded-xl focus:outline-none">Find Out More</button></g-link>
         </section>

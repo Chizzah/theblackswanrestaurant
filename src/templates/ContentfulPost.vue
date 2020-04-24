@@ -7,7 +7,7 @@
         <h1 class="mb-8 text-3xl md:text-6xl">{{ $page.post.title }}</h1>
         <p class="mb-8 md:mr-20 md:text-2xl"><span class="font-extrabold text-red-700 uppercase">Quick Summary:</span> {{ $page.post.summary }}</p>
         <section class="flex items-center justify-center md:mr-20 md:my-20">
-          <g-image :src="$page.post.image.file.url"/>
+          <g-image :src="$page.post.image.file.url" :alt="$page.post.title" />
         </section>
         <div class="mx-6 my-8 md:mr-20 md:text-2xl" v-html="$page.post.body" />
       </section>

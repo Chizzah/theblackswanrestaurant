@@ -2,7 +2,7 @@
   <layout>
     <section class="mt-20 md:mt-40 flex flex-col justify-center items-center md:text-2xl">
       <h1 class="text-lg text-center uppercase text-yellow-700 md:text-4xl">{{ $page.events.title }}</h1>
-      <g-image class="my-8 md:my-16 md:rounded" :src="$page.events.eventImage.file.url" />
+      <g-image class="my-8 md:my-16 md:rounded" :src="$page.events.eventImage.file.url" :alt="$page.events.title" />
       <p class="mb-4 text-center">{{ $page.events.description }}</p>
       <p class="mb-4 text-center"><strong>Date:</strong> {{ $page.events.date }}</p>
       <p class="mb-4 text-center"><strong>Time:</strong> {{ $page.events.time }}</p>

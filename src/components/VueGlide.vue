@@ -5,7 +5,7 @@
       :autoplay="6000"
       :gap="0">
       <vue-glide-slide v-for="(item, i) in items" :key="i">
-        <g-image class="md:ml-32 md:h-142 md:rounded" :src="item.images" />
+        <g-image class="md:ml-32 md:h-142 md:rounded" :src="item.images" alt="Image Gallery" />
       </vue-glide-slide>
     </vue-glide>
   </section>

@@ -15,14 +15,6 @@
           </li>
         </ul>
       </section>
-      <section class="mt-8 md:mr-16">
-        <h3 class="text-gray-100">Menu</h3>
-        <ul class="text-gray-500 rounded list-reset" v-for="menuItem in menuItems" :key="menuItem.title">
-          <li class="my-3">
-            <g-link :to="`${menuItem.route}`">{{ menuItem.title }}</g-link>
-          </li>
-        </ul>
-      </section>
       <section class="mt-8 mr-2 md:mr-16">
         <h3 class="text-gray-100">Get in touch</h3>
         <ul class="text-gray-500 rounded list-reset" v-for="contactItem in contactItems" :key="contactItem.title">
@@ -50,13 +42,6 @@ export default {
         { title:'Blog', route:'/blog' },
         { title:'Gallery', route:'/gallery' },
         { title:'Privacy', route:'/privacypolicy' },
-      ],
-      menuItems: [
-        { title:'Appetisers', route:'/appetisers' },
-        { title:'Mains', route:'/mains' },
-        { title:'Specialities', route:'/specialities' },
-        { title:'Desserts', route:'/desserts' },
-        { title:'Wine List', route:'/winelist' },
       ],
       contactItems: [
         { title:'Make Reservation', route:'/reservetable' },

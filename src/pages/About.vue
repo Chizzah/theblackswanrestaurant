@@ -2,7 +2,7 @@
   <Layout>
     <section class="md:text-2xl">
       <section class="relative w-full text-gray-100 bg-gray-900 md:h-128">
-        <g-image class="w-full h-full opacity-50 md:opacity-25 md:object-cover" src="../../static/img/black-swan-restaurant-in-lovely-oudtshoorn.webp" alt="" />
+        <g-image class="w-full h-full opacity-50 md:opacity-25 md:object-cover" src="../../static/img/black-swan-restaurant-in-lovely-oudtshoorn.webp" alt="Black Swan restaurant in Oudtshoorn, Klein Karoo." />
         <section class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full">
           <h1 class="mt-16 text-lg text-center uppercase md:text-4xl">We love serving our guests from <br> all over the world in lovely Oudtshoorn</h1>
           <h3 class="mx-4 mx-10 my-8 text-center md:text-2xl">We're here to provide a memorable experience in sunny South Africa's Klein Karoo.</h3>

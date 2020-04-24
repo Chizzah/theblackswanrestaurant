@@ -4,7 +4,7 @@
       <div class="border-b-2 border-red-700 border-solid w-92"></div>
     </div>
     <section class="m-8">
-      <g-image class="border-4 border-red-700 border-solid rounded-full" :src="$page.post.author.authorImage.file.url" alt="" />
+      <g-image class="border-4 border-red-700 border-solid rounded-full" :src="$page.post.author.authorImage.file.url" :alt="$page.post.author.name" />
     </section>
     <section class="m-8">
       <h4 class="font-semibold text-gray-800 uppercase">About The Author</h4>
