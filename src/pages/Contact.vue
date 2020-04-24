@@ -26,10 +26,10 @@
       <section class="flex flex-col items-center justify-center">
         <h2 class="text-yellow-700 md:text-3xl">Join us on social media!</h2>
         <section class="flex items-center justify-center my-8">
-          <a href="https://www.facebook.com/TheBlackSwanRestaurantWineBar/?ref=br_rs" target="_blank" rel="noopener noreferrer"><div class="p-2 mx-4 border-2 border-gray-900 border-solid rounded-full">
+          <a href="https://www.facebook.com/TheBlackSwanRestaurantWineBar/?ref=br_rs" target="_blank" rel="noopener noreferrer" aria-label="Link to Facebook page."><div class="p-2 mx-4 border-2 border-gray-900 border-solid rounded-full">
             <g-image class="mx-6 my-5" src="../../static/icons/facebook-page-the-black-swan-restaurant.svg" alt="Like The Black Swan Restaurant on Facebook." width="14" />
           </div></a>
-          <a href="https://www.instagram.com/explore/locations/385839180/south-africa/oudtshoorn-western-cape/the-black-swan-restaurant-wine-bar/" target="_blank" rel="noopener noreferrer"><div class="p-3 mx-4 border-2 border-gray-900 border-solid rounded-full">
+          <a href="https://www.instagram.com/explore/locations/385839180/south-africa/oudtshoorn-western-cape/the-black-swan-restaurant-wine-bar/" target="_blank" rel="noopener noreferrer" aria-label="Like to Instagram profile."><div class="p-3 mx-4 border-2 border-gray-900 border-solid rounded-full">
             <g-image class="m-4" src="../../static/icons/instagram-profile-the-black-swan-restaurant.svg" alt="Follow The Black Swan Restaurant on Instagram" width="23" />
           </div></a>
         </section>
